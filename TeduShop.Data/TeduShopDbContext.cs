@@ -13,6 +13,7 @@ namespace TeduShop.Data
     {
         public TeduShopDbContext() : base("TeduShopConnection")
         {
+            //khi load bảng cha thì k tự động include bảng con
             this.Configuration.LazyLoadingEnabled = false;
         }
 
