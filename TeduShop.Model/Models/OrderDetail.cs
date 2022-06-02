@@ -6,6 +6,7 @@ namespace TeduShop.Model.Models
     [Table("OrderDetails")]
     public class OrderDetail
     {
+        //nếu có 2 trường cùng là key thì phải thêm thuộc tính  [Column(Order =stt)] để chỉ cho sql  biết key nào đứng trước và đứng sau
         [Key]
         [Column(Order =1)]
         public int OrderID { set; get; }
